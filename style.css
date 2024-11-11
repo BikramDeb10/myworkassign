@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(26, 26, 26);
+  font-family: "Roboto", sans-serif;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+}
+
+.hero-sec {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 30px;
+  position: relative;
+}
+.image-sec {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.img-box .img {
+  height: 210px;
+  width: 350px;
+}
+
+.img-box .img_type-1 {
+  background-image: url("images/bigger-science_thumbnail-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 120px;
+}
+
+.img-box .img_type-2 {
+  background-image: url("images/map-interactive.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 60px;
+  top: 50px;
+}
+
+.img-box .img_type-3 {
+  background-image: url("images/Capture\ daÌeIÌcran\ 2024-01-04\ aIÌ\ 16.41.06-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 80px;
+  top: 450px;
+}
+.img-box .img_type-4 {
+  background-image: url("images/Capture-dâeÌcran-2023-04-03-aÌ-10.59.43_2-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0px;
+  top: 350px;
+}
+
+.img_type-1 {
+  cursor: pointer;
+  transition: all 0.1s;
+  transition: transform 0.1s ease;
+}
+
+.img_type-2 {
+  cursor: pointer;
+  transition: all 0.1s;
+  transition: transform 0.1s ease;
+}
+
+.img_type-3 {
+  cursor: pointer;
+  transition: all 0.1s;
+  transition: transform 0.1s ease;
+}
+
+.img_type-4 {
+  cursor: pointer;
+  transition: all 0.1s;
+  transition: transform 0.1s ease;
+}
+
+.text-sec:hover {
+  z-index: -1;
+}
+.img:hover {
+  z-index: 50;
+}
+
+.text-sec {
+  position: absolute;
+  top: 330px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  line-height: 70px;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.text-sec span h1 {
+  font-size: 8rem;
+  font-weight: 900;
+
+  color: rgb(250, 250, 250);
+  letter-spacing: 8px;
+  margin: 20px 0;
+  /* z-index: -1; */
+}
+
+.text-sec.active span h1 {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(219, 219, 219, 0.2);
+}
